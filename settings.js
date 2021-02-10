@@ -17,7 +17,13 @@ const firestore = {
 };
 
 const firebaseConfig = {
-    
+    apiKey: "AIzaSyDWOt-wnrxb0Uwos6rP6ImK-d5ANz2s5bU",
+    authDomain: "valentine-day-ad9ed.firebaseapp.com",
+    projectId: "valentine-day-ad9ed",
+    storageBucket: "valentine-day-ad9ed.appspot.com",
+    messagingSenderId: "857140883142",
+    appId: "1:857140883142:web:0abff7e00eb685a2a8b1c7",
+    measurementId: "G-1QMND59JN1"
 };
 
 /* UI DATA
