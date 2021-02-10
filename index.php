@@ -1,0 +1,104 @@
+<!--
+Created Date: Wednesday, 3rd February 2021, 4:03:52 pm
+Author: Kingsley Chimezie
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Alex Vanchov">
+    <meta name="description" content="Valentine E-invite">
+    <meta name="keywords" content="Valentine's Day, 2021, date">
+    <meta name="theme-color" content=" #DC362D" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покана</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+
+    <!-- scripts -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+</head>
+
+<body>
+
+    <!-- HEART DOOR -->
+    <div id="mainContainer">
+        <!-- LOADER -->
+        <div id="loader" class="m-5">
+            <h2 id="loaderHeart" class="animate__animated animate__bounce animate__infinite"> </h2>
+            <h2 class="animate__animated animate__fadeIn">Зарежда...</h2>
+        </div>
+
+        <!-- TITLE -->
+        <em>
+            <h1 id="header" class="animate__animated animate__fadeInDown" style="text-shadow:1px 1px 0 #444"></h1>
+        </em>
+
+        <!--  BEE  -->
+        <div class="animate__animated animate__zoomIn animate__delay-2s">
+            <img id="ask-img" src="" alt="">
+        </div>
+
+
+        <!-- RESULT -->
+        <div id="resultGroup" class="mt-5">
+            <div id="result">
+                <h2 id="resultHeader" class="animate__animated animate__zoomIn animate__delay-2s mb-3"></h2>
+                <img id="resultImg" class="animate__animated animate__flipInY animate__delay-2s w3-card-4">
+            </div>
+        </div>
+
+        <!-- BUTTONS -->
+        <div id="btnsGroup" class="btns-group">
+            <button type="button" onclick="yesClicked()" id="btnYes"
+                class="animate__animated animate__zoomIn animate__delay-2s m-3 btn btn-dark btn-lg w3-card">Даа
+                ❤️🥰</button>
+            <button type="button" onclick="noClicked()" id="btnNo"
+                class="animate__animated animate__zoomIn animate__delay-3s m-3 btn btn-dark btn-lg w3-card">Не
+                😢🥺</button>
+            <button type="button" onclick="changeAnswerClicked()" id="btnChangeAnswer"
+                class="animate__animated animate__zoomIn animate__delay-2s btn btn-dark btn-lg w3-card">Смени
+                отговора</button>
+            <p id="lastAnswerDate" class="animate__animated animate__fadeIn animate__delay-2s mt-3"></p>
+        </div>
+
+        <!-- CREDIT -->
+        <div id="credit" class="animate__animated animate__fadeInUp animate__delay-2s">
+            <a href="https://github.com/AlexVanchov/Valentine-E-Invite">
+                Направено с
+                <span id="heart"
+                    class="animate__animated animate__heartBeat animate__delay-5s animate__slow animate__infinite">❤</span>
+                от Алекс
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- SCRIPTS 
+    ------------------------------------------------------------------------------------------------>
+    <script src="settings.js"></script>
+    <script src="index.js"></script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</body>
+
+</html>
