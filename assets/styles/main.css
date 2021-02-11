@@ -78,11 +78,6 @@ body #mainContainer #btnsGroup #btnChangeAnswer {
   margin-top: 25px;
 }
 
-body #mainContainer #credit {
-  position: absolute;
-  bottom: 30px;
-  width: 94%;
-}
 
 body #mainContainer #credit a {
   text-decoration: none;
@@ -93,6 +88,9 @@ body #mainContainer #credit #heart {
   display: inline-block;
 }
 
+#ask-img{
+  max-width: 100%;
+}
 /* RESPONSIVE
   ------------------------------------------------------ */
 @media only screen and (min-width: 1920px) {
@@ -105,6 +103,11 @@ body #mainContainer #credit #heart {
   #mainContainer #resultGroup #result #resultImg {
     width: 400px;
   }
+
+body #mainContainer #credit {
+  position: absolute;
+  bottom: 30px;
+}
 }
 
 @media only screen and (max-width: 468px) {
@@ -113,6 +116,11 @@ body #mainContainer #credit #heart {
   }
   #mainContainer #resultGroup #result #resultImg {
     width: 100%;
+  }
+  body #mainContainer #credit {
+    position: unset;
+    bottom: unset;
+    width: unset;
   }
 }
 /*# sourceMappingURL=main.css.map */

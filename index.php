@@ -57,6 +57,7 @@
         <div id="resultGroup" class="mt-5">
             <div id="result">
                 <h2 id="resultHeader" class="animate__animated animate__zoomIn animate__delay-2s mb-3"></h2>
+                <h4 id="resultHeaderIP" class="animate__animated animate__zoomIn animate__delay-3s mb-3"></h2>
                 <img id="resultImg" class="animate__animated animate__flipInY animate__delay-2s w3-card-4">
             </div>
         </div>
